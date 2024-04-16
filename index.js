@@ -19,13 +19,13 @@ const main = async () => {
         ]);
         switch (action.chosen) {
             case 1:
-                await getAllExpenses(); // Cambiado de getAllUsers a getAllExpenses para reflejar la funcionalidad
+                await getAllExpenses(); 
                 break;
             case 2:
-                await createNewExpense(); // Cambiado de createNewUser a createNewExpense para reflejar la funcionalidad
+                await createNewExpense(); 
                 break;
-            case 3:
-                run = false; // La opción 3 debería salir del bucle, no la 99
+            case 99:
+                run = false; 
                 break;
             default:
                 run = false;

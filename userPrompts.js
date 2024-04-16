@@ -3,7 +3,7 @@ import DatePrompt from "inquirer-date-prompt";
 
 inquirer.registerPrompt("date", DatePrompt);
 
-export const newExpenseNamePrompt = async () => { // Cambiado el nombre de la función de promptNewUser a newExpenseNamePrompt
+export const newExpenseNamePrompt = async () => { 
     return await inquirer.prompt([
         {
             type: "input",
